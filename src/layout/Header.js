@@ -1,22 +1,20 @@
 import React from 'react';
 
 function Header() {
-    return (
-        <>
-            <nav>
-                <div className="container">
-                    <div className="nav-wrapper">
-                        <a href="#" className="brand-logo">React movie app</a>
-                        <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </>
-    );
-}
+  return (
+    <div className='header'>
+      <nav>
+        <div className="nav-wrapper container">
+          <a href="#" className="brand-logo">Logo</a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 export default Header;

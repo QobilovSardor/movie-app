@@ -1,22 +1,23 @@
-import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
 
 function Movie(props) {
   const { Title, Year, imdbID, Type, Poster } = props;
   return (
-    <div>
-      <div key={imdbID} className="card movie">
+    <div key={imdbID}>
+      <div  className="card">
         <div className="card-image waves-effect waves-block waves-light">
           <img className="activator" src={Poster} />
         </div>
-        <div className="card-content">
-          <span className='card-title activator'>{Title}</span>
+        <div className="card-content card-stacked">
+          <b className="card-title activator grey-text text-darken-4">{Title}</b>
+          <br /> 
           <hr />
-          <b>{Year}<i className="material-icons right">{Type}</i></b>
+          <br />
+          <b>{Type} <span className='right'>{Year}</span></b>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Movie;

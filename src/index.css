@@ -45,3 +45,6 @@
   top: 0;
   display: inline-block;
 }
+label:not(:last-child) {
+  margin-right: 1rem;
+}
